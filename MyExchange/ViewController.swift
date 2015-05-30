@@ -26,8 +26,14 @@ class ViewController: UIViewController {
         
         //Get Value from TextField
         douMoney = Double(thbTextField.text.toInt()!)
+        
+        // ประมวลผล
         douAnswer = douMoney * myFactor
+        
+        // Create String จากสิ่งที่คำนวนได้
         strAnswer = String(stringInterpolationSegment: douAnswer)
+        
+        // แสดงสิ่งที่คำนวนได้
         answerLabel.text = strAnswer + " USD"
         
     }   // exchangeButton
