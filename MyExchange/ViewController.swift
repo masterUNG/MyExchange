@@ -11,11 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     
     //Explicit
-    let myFactor:Double = 0.031
+    let myFactor:Double = 0.031 // ค่าคงที่สำหรับตัวคูณ
     
-    var douMoney:Double = 0
-    var douAnswer:Double = 0
-    var strAnswer:String = ""
+    var douMoney:Double = 0     // double ที่รับค่าจาก TextField
+    var douAnswer:Double = 0    // double ที่ได้จากการคำนวน
+    var strAnswer:String = ""   // String ที่จะนำไปแสดงที่ label
     
     
     @IBOutlet weak var answerLabel: UILabel!
